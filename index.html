@@ -4,69 +4,168 @@
   <meta charset="UTF-8">
   <title>Encanto Botânico</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <style>
+    body {
+      font-family: Arial;
+      background: #f0fdf4;
+      margin: 0;
+      padding: 20px;
+    }
+
+    .container {
+      max-width: 900px;
+      margin: auto;
+    }
+
+    .header {
+      text-align: center;
+      margin-bottom: 30px;
+    }
+
+    .header img {
+      width: 120px;
+    }
+
+    .title {
+      font-size: 28px;
+      color: #065f46;
+      margin: 10px 0;
+    }
+
+    .subtitle {
+      color: #555;
+    }
+
+    .grid {
+      display: grid;
+      gap: 20px;
+    }
+
+    .card {
+      background: white;
+      border-radius: 15px;
+      padding: 15px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    }
+
+    .card img {
+      width: 100%;
+      border-radius: 10px;
+    }
+
+    .card h3 {
+      margin: 10px 0 5px;
+    }
+
+    .price {
+      color: #065f46;
+      font-weight: bold;
+      font-size: 18px;
+    }
+
+    .btn {
+      margin-top: 10px;
+      width: 100%;
+      padding: 12px;
+      border: none;
+      background: #16a34a;
+      color: white;
+      border-radius: 10px;
+      font-size: 16px;
+    }
+
+    .btn:hover {
+      background: #15803d;
+    }
+
+    .info {
+      margin-top: 30px;
+      text-align: center;
+      background: white;
+      padding: 20px;
+      border-radius: 15px;
+    }
+
+    .badges {
+      text-align: center;
+      margin-bottom: 20px;
+      color: #065f46;
+      font-weight: bold;
+    }
+  </style>
 </head>
 
-<body style="font-family: Arial; background:#f0fdf4; padding:20px;">
+<body>
 
-  <div style="text-align:center;">
-    <img src="logo.png" width="150">
-    <h1>Encanto Botânico 🌿</h1>
-    <p>Sabonetes artesanais naturais</p>
+<div class="container">
+
+  <div class="header">
+    <img src="logo.png">
+    <div class="title">Encanto Botânico 🌿</div>
+    <div class="subtitle">Sabonetes artesanais naturais</div>
   </div>
 
-  <div style="display:grid; gap:20px;">
+  <div class="badges">
+    🌿 100% artesanal | 🚚 Enviamos para todo Brasil | ✨ Feito à mão
+  </div>
 
-    <div>
-      <img src="camomila.jpg" width="100%">
+  <div class="grid">
+
+    <div class="card">
+      <img src="camomila.jpg">
       <h3>Sabonete Camomila e Mel</h3>
-      <p>R$ 23,00</p>
+      <div class="price">R$ 23,00</div>
       <a href="https://wa.me/5511974032800?text=Quero Camomila e Mel">
-        <button>Comprar</button>
+        <button class="btn">Comprar pelo WhatsApp</button>
       </a>
     </div>
 
-    <div>
-      <img src="bergamota.jpg" width="100%">
+    <div class="card">
+      <img src="bergamota.jpg">
       <h3>Sabonete Bergamota e Canela</h3>
-      <p>R$ 27,00</p>
+      <div class="price">R$ 27,00</div>
       <a href="https://wa.me/5511974032800?text=Quero Bergamota e Canela">
-        <button>Comprar</button>
+        <button class="btn">Comprar pelo WhatsApp</button>
       </a>
     </div>
 
-    <div>
-      <img src="acafrao.jpg" width="100%">
+    <div class="card">
+      <img src="acafrao.jpg">
       <h3>Sabonete Açafrão e Café</h3>
-      <p>R$ 22,00</p>
+      <div class="price">R$ 22,00</div>
       <a href="https://wa.me/5511974032800?text=Quero Açafrão e Café">
-        <button>Comprar</button>
+        <button class="btn">Comprar pelo WhatsApp</button>
       </a>
     </div>
 
-    <div>
-      <img src="maracuja.jpg" width="100%">
+    <div class="card">
+      <img src="maracuja.jpg">
       <h3>Sabonete Maracujá e Camomila</h3>
-      <p>R$ 26,00</p>
+      <div class="price">R$ 26,00</div>
       <a href="https://wa.me/5511974032800?text=Quero Maracujá e Camomila">
-        <button>Comprar</button>
+        <button class="btn">Comprar pelo WhatsApp</button>
       </a>
     </div>
 
-    <div>
-      <img src="maca.jpg" width="100%">
+    <div class="card">
+      <img src="maca.jpg">
       <h3>Sabonete Maçã Verde e Erva Doce</h3>
-      <p>R$ 20,00</p>
+      <div class="price">R$ 20,00</div>
       <a href="https://wa.me/5511974032800?text=Quero Maçã Verde e Erva Doce">
-        <button>Comprar</button>
+        <button class="btn">Comprar pelo WhatsApp</button>
       </a>
     </div>
 
   </div>
 
-  <div style="margin-top:30px; text-align:center;">
+  <div class="info">
     <h3>Pagamento via PIX</h3>
-    <p>rafabasbio@gmail.com</p>
+    <p><strong>rafabasbio@gmail.com</strong></p>
+    <p>Envie o comprovante pelo WhatsApp</p>
   </div>
+
+</div>
 
 </body>
 </html>
